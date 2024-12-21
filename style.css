@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    background-color: #EFEBE9;
+    color: #3E2723;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.title {
+    font-family: 'Playfair Display';
+    padding: 0;
+    margin: 24px 0;
+}
+
+.span-accent {
+    color: orangered;
+}
+
+.avatar {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 4px;
+}
+
+.header-container {
+    align-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 4px dotted #3E2723;
+}
+
+.job {
+    font-style: italic;
+}
+
+.blinker {
+    color: orangered;
+    animation: 1s blinker infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.location {
+    display: flex;
+    gap: 1rem;
+    background-color: #D7CCC8;
+    padding: 1rem;
+    border-radius: 4px;
+    max-width: fit-content;
+}
+
+.technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-left: 24px;
+}
+
+.bio {
+    max-width: 70%;
+}
+
+.projects-heading {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    color: orangered;
+}
+
+.projects {
+    margin-right: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 48px;
+}
+
+h3 {
+    font-size: 26px;
+    margin-left: 0;
+}
+
+.project-card {
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #D7CCC8;
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+}
+
+.project-card:hover {
+    background-color: #BCAAA4;
+    box-shadow: 2px 2px 5px 0 rgba(20, 20, 20, .2);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3E2723;
+}
+
+.card-text {
+    
+}
+
+.contacts {
+    display: flex;
+    gap: 2rem;
+}
+
+address {
+    font-style: normal;
+}
+
+.mail, .link {
+    color: #EFEBE9;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.mail:hover, .link:hover {
+    color: orangered;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+    margin-top: 64px;
+    background-color: #795548;
+    color: #EFEBE9;
+    padding: 24px;
+    border-radius: 4px;
+}
+
+footer:before {
+    content: 'Contacts';
+    margin-right: auto;
+    font-weight: 800;
+    color: orange;
+}
